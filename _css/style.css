@@ -1,0 +1,148 @@
+/* @author Paulo_Vitor_Guedes */
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../_fonts/Gotham-Black.woff2') format('woff2'), url('../_fonts/Gotham-Black.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+.marcador{
+    border: 1px solid red;
+}
+
+body, html, #home{
+    height: 100%;
+}
+
+body{
+    background: url(../_img/capa.png),
+                url(../_img/ruido.png),
+                linear-gradient(50deg,#ff4169,#7c26f8);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Formatação Navbar 
+----------------------------------------------------*/
+
+/* logo */
+header h1#logo{
+    font-family: "Gotham";
+}
+
+header a:hover{
+    text-decoration: none;
+}
+
+header nav img{
+    width: 60px;
+}
+
+
+/* menu */
+nav.navbar-transparente{
+    background: rgba(0,0,0,0.5);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: white;
+    font-size: 1.2em;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    color: #db1865
+}
+
+.navbar-toggler {
+    font-size: 1.55rem;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.divisor{
+    width: 1px;
+    background: white;
+    margin: 5px 20px;
+}
+
+
+/* Formatação Capa 
+-----------------------------------------------------*/
+
+.capa{
+    text-align: center;
+}
+
+section h1{
+    color: white;
+    font-family: "Gotham";
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.btn-custom{
+    color: white;
+    border-radius: 500px;
+    text-transform: uppercase;
+    transition: 0.4s;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.btn-roxo{
+    background-color: #db1865;
+}
+
+.btn-roxo:hover{
+    background-color: #ff4169;
+    color: white;
+}
+
+.btn-branco{
+    border: 2px solid white;
+}
+
+.btn-branco:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+/*Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
+@media (max-width: 575.98px) {
+    section h1{
+        font-size: 2em;
+    } 
+}
+
+/*Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    section h1{
+        font-size: 2.05em;
+    }
+}
+
+/*Dispositivos médios (tablets com 768px ou mais) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    section h1{
+        font-size: 2.5em;
+    }
+}
+
+/*Dispositivos large (desktops com 992px ou mais) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    section h1{
+        font-size: 3em;
+    }
+}
+
+/*Dispositivos extra large (desktops grandes com 1200px ou mais) */
+@media (min-width: 1200px) {
+    section h1{
+        font-size: 4em;
+    }
+}
