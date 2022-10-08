@@ -153,27 +153,43 @@ h3{
 @media (max-width: 575.98px) {
     section h1{
         font-size: 2em;
-    } 
+    }
+
+    h2{
+        font-size: 3em;
+    }
+
+    header h1#logo{
+        font-size: 2em;
+    }
 }
 
 /*Dispositivos small (telefones em modo paisagem, com 576px ou mais) */
 @media (min-width: 576px) and (max-width: 767.98px) {
     section h1{
-        font-size: 2.05em;
+        font-size: 2em;
+    }
+
+    h2{
+        font-size: 2.80em;
     }
 }
 
 /*Dispositivos médios (tablets com 768px ou mais) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     section h1{
-        font-size: 2.5em;
+        font-size: 2.60em;
+    }
+
+    h2{
+        font-size: 2em;
     }
 }
 
 /*Dispositivos large (desktops com 992px ou mais) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     section h1{
-        font-size: 3em;
+        font-size: 3.50em;
     }
 }
 
