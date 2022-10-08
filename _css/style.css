@@ -8,9 +8,7 @@
     font-display: swap;
 }
 
-.marcador{
-    border: 1px solid red;
-}
+
 
 body, html, #home{
     height: 100%;
@@ -30,6 +28,7 @@ body{
 /* logo */
 header h1#logo{
     font-family: "Gotham";
+    letter-spacing: -0.05em;
 }
 
 header a:hover{
@@ -43,7 +42,7 @@ header nav img{
 
 /* menu */
 nav.navbar-transparente{
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.7);
 }
 
 .navbar-expand-lg .navbar-nav .nav-link{
@@ -74,7 +73,7 @@ nav.navbar-transparente{
     text-align: center;
 }
 
-section h1{
+section#home h1{
     color: white;
     font-family: "Gotham";
     text-transform: uppercase;
@@ -109,7 +108,45 @@ section h1{
 }
 
 
+/* Formatação serviços
+----------------------------------------------------*/
 
+#servicos{
+    background: white;
+    padding: 20px 0 20px 0;
+}
+
+.albuns{
+    padding: 10px 5px;
+}
+
+#servicos h2, h3{
+    color: #db1865;
+}
+
+#servicos p{
+    margin-bottom: 40px;
+}
+
+
+
+/* Tipografias 
+------------------------------------------------------*/
+.marcador{
+    border: 1px solid red;
+}
+
+h2{
+    font-size: 2.90em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
 
 
 /*Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
