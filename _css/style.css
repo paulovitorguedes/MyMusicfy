@@ -12,6 +12,7 @@
 
 body, html, #home{
     height: 100%;
+    overflow-x: hidden;
 }
 
 body{
@@ -26,9 +27,10 @@ body{
 ----------------------------------------------------*/
 
 /* logo */
-header h1#logo{
+.logo{
     font-family: "Gotham";
     letter-spacing: -0.05em;
+    font-size: 1.5em;
 }
 
 header a:hover{
@@ -39,18 +41,17 @@ header nav img{
     width: 60px;
 }
 
-
 /* menu */
 nav.navbar-transparente{
     background: rgba(0,0,0,0.7);
 }
 
-.navbar-expand-lg .navbar-nav .nav-link{
+.navbar-expand-md .navbar-nav .nav-link{
     color: white;
     font-size: 1.2em;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link:hover{
+.navbar-expand-md .navbar-nav .nav-link:hover{
     color: #db1865
 }
 
@@ -120,7 +121,7 @@ section#home h1{
     padding: 10px 5px;
 }
 
-#servicos h2, h3{
+#servicos h2, #servicos h3{
     color: #db1865;
 }
 
@@ -128,6 +129,65 @@ section#home h1{
     margin-bottom: 40px;
 }
 
+.rotacionar{
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+
+
+
+
+/* Formataçãp Recursos 
+--------------------------------------------------------*/
+
+#recursos{
+    padding: 20px 0 20px 0;
+    color: white;
+}
+
+#recursos h2,#recursos h3{
+    color: #9be0e1;
+}
+
+
+
+
+
+
+/* Formatação Footer 
+-------------------------------------------------------*/
+footer{
+    background-color: black;
+    padding: 50px 0 20px 0;
+    color: white;
+    position: relative;
+}
+.logofooter{
+    width: 80px;
+}
+
+.caixa_logo_footer{
+    text-align: center;
+}
+
+footer .navbar-nav a{
+    color: white;
+}
+
+footer .navbar-nav a:hover{
+    color: #9be0e1;
+    text-decoration: none;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    float: right;
+    margin: 0 5px ;
+}
 
 
 /* Tipografias 
@@ -137,6 +197,8 @@ section#home h1{
 }
 
 h2{
+    font-family: "Gotham";
+    text-transform: uppercase;
     font-size: 2.90em;
     font-weight: 700;
     letter-spacing: -0.04em;
@@ -147,6 +209,14 @@ h3{
     font-weight: 600;
     letter-spacing: -0.04em;
 }
+
+h4{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: lightgrey;
+    margin-top: 30px;
+}
+
 
 
 /*Dispositivos extra small (telefones em modo retrato, com menos de 576px) */
@@ -191,11 +261,20 @@ h3{
     section h1{
         font-size: 3.50em;
     }
+
+    h4{
+        margin-top: 0px;
+    }
+    
 }
 
 /*Dispositivos extra large (desktops grandes com 1200px ou mais) */
 @media (min-width: 1200px) {
     section h1{
         font-size: 4em;
+    }
+
+    h4{
+        margin-top: 0px;
     }
 }
